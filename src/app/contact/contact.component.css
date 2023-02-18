@@ -1,0 +1,68 @@
+.contenedorTitulo{
+    text-align: center;
+    margin-bottom: 5em;
+    transition: 2s;
+}
+.contenedorTitulo:hover{
+    color: var(--fucsia);
+    transition: 2s;
+}
+.contenedorContacto{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+.contenedorHorario, .contenedorTelefono{
+    width: 20%;
+    padding: 2em;
+    border-radius: 10px;
+    border: 3px inset var(--fucsia);
+}
+.contenedorHorario p span, .contenedorTelefono p span{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--fucsia)
+}
+.contenedorFormulario{
+
+    display: flex;
+    justify-content: center;
+}
+.contenedorFormulario form{
+    width: 600px;
+    border: 2px outset var(--fucsia);
+    border-radius: 10px;
+    margin-bottom: 3em;
+}
+
+.contenedorFormulario .contenedorDescripcion{
+
+    padding: 2em;
+    text-align: center;
+    background-color: var(--fucsia);
+    color: var(--blanco);
+}
+.contenedorFormulario .contenedorGrupo label{
+    width: 150px;
+    text-align: justify;
+}
+.contenedorGrupo {
+    margin: 1.5em;
+    box-sizing: border-box;
+    text-align: center;
+}
+.contenedorGrupo button{
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    text-decoration: none;
+    border-color: var(--fucsia);
+    transition: 2s;
+
+}
+.contenedorGrupo button:hover{
+    transition: 2s;
+    background-color: var(--fucsia);
+    color: var(--blanco);
+}
+

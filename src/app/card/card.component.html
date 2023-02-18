@@ -1,0 +1,17 @@
+
+<div class="contenedorCard" *ngFor="let vh of vehiculos">
+    <div class="contenedorVehiculo">
+        <img src="../../assets/teslaCar.jpg" alt="Error al cargar la imagen" >
+    </div>
+    <div class="contenedorDescp">
+        <div class="descripcionGroup">
+
+            <p class="descripcionTitulo">       {{vh.titulo}}               </p>
+            <p class="descripcionPrecio">       &#36;{{vh.precio}}          </p>
+            <p class="descripcionKilometraje">  2022 | {{vh.kilometraje}}   </p>
+            <p class="descripcionFinal">        {{vh.descripcion}}          </p>
+        </div>
+    </div>
+</div>
+
+

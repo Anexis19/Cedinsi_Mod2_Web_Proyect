@@ -1,0 +1,44 @@
+.contenedorTitulo{
+    margin-top: 5em;
+    text-align: center;
+    margin-bottom: 5em;
+    transition: 2s;
+}
+.contenedorTitulo:hover{
+    color: var(--fucsia);
+    transition: 2s;
+}
+.contenedorFormulario{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10em;
+
+}
+.contenedorFormulario form{
+    width: 600px;
+    text-align: center;
+    border: 2px outset var(--fucsia);
+    border-radius: 10px;
+    padding: 3em;
+}
+.contenedorFormulario form label{
+    width: 200px;
+    text-align: justify;
+}
+.contenedorGrupo{
+    margin: 1.5em;
+}
+.contenedorGrupo button{
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    text-decoration: none;
+    border-color: var(--fucsia);
+    transition: 2s;
+
+}
+.contenedorGrupo button:hover{
+    transition: 2s;
+    background-color: var(--fucsia);
+    color: var(--blanco);
+}

@@ -1,0 +1,67 @@
+<!--
+
+<div class="contenedorHeader">
+    <div class="contenedorImagen">
+        <img src="../../assets/logo-tesla.jpeg" alt="Error al cargar la imagen">
+    </div>
+    <nav class="contenedorNav">
+        <div class="contenedorItem"><a href="">Crea tu cuenta</a> </div>
+        <div class="contenedorItem"><a href="">Ingresa</a></div>
+        <div class="contenedorItem"><a href="">Ayuda / PQR</a></div>
+        <div class="contenedorItem"><a href="">Contacto</a></div>
+    </nav>
+</div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../../assets/logo-tesla2.png" alt="" width="200" height="80"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <!-- APLICACION DE ROUTER LINK PARA EL SISTEMA DE RUTAS DE ANGULAR -->
+            <a class="nav-link active" aria-current="page" routerLink="/inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <!-- APLICACION DE ROUTER LINK PARA EL SISTEMA DE RUTAS DE ANGULAR -->
+            <a class="nav-link" routerLink="/ayuda">Ayuda / PQR</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Opciones de Usuario
+            </a>
+            <ul class="dropdown-menu">
+              <!-- APLICACION DE ROUTER LINK PARA EL SISTEMA DE RUTAS DE ANGULAR -->
+              <li><a class="dropdown-item" routerLink="/login">Ingresar</a></li>
+              <li><a class="dropdown-item" href="#">Registrarse</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Contacto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <!-- SE AGREGA NG MODEL -->
+          <input class="form-control me-2" type="text" placeholder="Ingresa tu busqueda" aria-label="Search" [(ngModel)]="valorIngresado">
+          <button class="btn btn-outline-success" type="submit" (click)="busqueda()">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+</body>
+</html>
+
+

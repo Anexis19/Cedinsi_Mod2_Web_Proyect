@@ -1,0 +1,34 @@
+.contenedorCard{
+    background: lightgrey;
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+.contenedorVehiculo{
+    padding: 5px;
+    border-radius: 20px;
+
+}
+.contenedorVehiculo img{
+    border-radius: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+.descripcionGroup{
+    font-family: "Montserrat", sans-serif;
+    padding: 5px;
+}
+.descripcionGroup .descripcionPrecio, .descripcionTitulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.descripcionGroup .descripcionFinal{
+    font-weight: 600;
+}
+.contenedorCard:hover{
+    transition: 1s;
+    border: 4px inset #8A084B;
+}

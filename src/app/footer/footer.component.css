@@ -1,0 +1,28 @@
+.contenedorFooter {
+    background: url('../../assets/bg.jpg');
+    height: 100%;
+
+}
+.contenedorImagenFT{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedorImagenFT img{
+    width: 100px;
+}
+.contenedorInfo{
+    color: aliceblue;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+.elemento{
+    margin-bottom: 20px;
+}
+
+.elemento img{
+    margin: auto;
+    display: block;
+}
