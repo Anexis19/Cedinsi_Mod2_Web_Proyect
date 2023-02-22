@@ -1,9 +1,19 @@
+.contenedorPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
 .contenedorCard{
     background: lightgrey;
-    width: 500px;
-    margin: auto;
+    width: 600px;
+    margin: 10px;
+    margin-bottom: 50px;
     border-radius: 20px;
-    transition: 1s;
+    border: 4px inset var(--fucsia);
+
 
 }
 .contenedorVehiculo{
@@ -28,7 +38,19 @@
 .descripcionGroup .descripcionFinal{
     font-weight: 600;
 }
-.contenedorCard:hover{
-    transition: 1s;
-    border: 4px inset #8A084B;
+.contenedorDescp .descripcionGroup{
+    margin-left: 1em;
+}
+.contenedorBoton{
+    width: 100%;
+    text-align: center;
+}
+.contenedorBoton button{
+    padding: 10px;
+    border-style: none;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--fucsia);
+    color: var(--blanco);
 }

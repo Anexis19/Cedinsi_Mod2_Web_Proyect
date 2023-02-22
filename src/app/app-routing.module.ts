@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { SliderComponent } from './slider/slider.component';
 
 const routes: Routes = [
 
@@ -18,12 +19,15 @@ const routes: Routes = [
   },{
     path:'login',
     component:LoginComponent
+  },{
+    path: 'galeria',
+    component:SliderComponent
   },
   {
     // Se define una ruta por defecto con su componente por defecto
     path:'**',
     component:HomeComponent
-  }
+  },
 ];
 
 @NgModule({

@@ -1,17 +1,26 @@
+<div>
+    <app-filter-nav (search)="busqueda($event)"></app-filter-nav>
+</div>
+<div class="contenedorPrincipal">
+    <!-- SE AGREGA EL PIPE BUSCAR EL CUAL RECIBE LA PROPIEDAD A BUSCAR -->
+    <div class="contenedorCard" *ngFor="let vh of vehiculos | buscar: 'titulo':datoBuscar">
+        <div class="contenedorVehiculo">
+            <img src="../../assets/ta_models/{{vh.imagen}}" alt="Error al cargar la imagen" >
+        </div>
+        <div class="contenedorDescp">
+            <div class="descripcionGroup">
 
-<div class="contenedorCard" *ngFor="let vh of vehiculos">
-    <div class="contenedorVehiculo">
-        <img src="../../assets/teslaCar.jpg" alt="Error al cargar la imagen" >
-    </div>
-    <div class="contenedorDescp">
-        <div class="descripcionGroup">
-
-            <p class="descripcionTitulo">       {{vh.titulo}}               </p>
-            <p class="descripcionPrecio">       &#36;{{vh.precio}}          </p>
-            <p class="descripcionKilometraje">  2022 | {{vh.kilometraje}}   </p>
-            <p class="descripcionFinal">        {{vh.descripcion}}          </p>
+                <p class="descripcionTitulo">       {{vh.titulo}}               </p>
+                <p class="descripcionPrecio">       &#36;{{vh.precio}}          </p>
+                <p class="descripcionKilometraje">  2022 | {{vh.kilometraje}}   </p>
+                <p class="descripcionFinal">        {{vh.descripcion}}          </p>
+            </div>
+            <div class="contenedorBoton">
+                <button (click)="pruebaEnvio(vh.titulo)" routerLink="/galeria"> Ver Galeria de Imagenes</button>
+            </div>
         </div>
     </div>
 </div>
+
 
 

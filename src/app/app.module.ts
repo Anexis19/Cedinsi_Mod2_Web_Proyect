@@ -10,6 +10,8 @@ import { FilterNavComponent } from './filter-nav/filter-nav.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { BuscarPipe } from './pipes/buscar.pipe';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { LoginComponent } from './login/login.component';
     FilterNavComponent,
     HomeComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    BuscarPipe,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  // SE AGREGA LA CLASE CREADA EN EL PIPE
+  providers: [BuscarPipe],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

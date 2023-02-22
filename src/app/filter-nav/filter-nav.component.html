@@ -1,63 +1,54 @@
-
-
-<div class="contenedorFiltro">
-    <div class="tituloFiltro">
-        <p>FILTRO DE BUSQUEDA</p>
-    </div>
-
+<div class="contenedorFormulario">
     <form action="">
-        <div class="grupoFiltro">
-            <label for="selectDepartamento">Departamento</label>
-            <select name="selectDepartamento" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
+        <div class="contenedorTitulo">
+            <p>FILTRO DE BUSQUEDA</p>
         </div>
-        <div class="grupoFiltro">
-            <label for="selectMunicipio">Municipio</label>
-            <select name="selectMunicipio" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-        </div>
+        <div class="contenedorPrincipal">
+            <div class="grupoFiltro">
+                <label for="inputDept">Departamento </label>
+                <select name="inputDept" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+            </div>
+            <div class="grupoFiltro">
+                <label for="inputMunc">Municipio </label>
+                <div class="prueba">
+                    <select name="inputMunc" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                </div>
 
-        <div class="grupoFiltro">
-            <label for="selectMarca">Marca</label>
-            <select name="selectMarca" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-        </div>
+            </div>
+            <div class="grupoFiltro">
+                <label for="inputModelo">Modelo </label>
+                <select name="inputModelo" id="">
+                    <option value="">Modelo 1</option>
+                    <option value="">Modelo 2</option>
+                    <option value="">Modelo 3</option>
+                </select>
+            </div>
+            <div class="grupoFiltro">
 
-        <div class="grupoFiltro">
-            <label for="selectModelo">Modelo</label>
-            <select name="selectModelo" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-        </div>
-        <hr>
-        <div class="tituloRango">
-            <p>RANGO DE PRECIOS</p>
-        </div>
+                <label for="inputColor">Color </label>
+                <select name="inputColor" id="">
+                    <option value="">Rojo</option>
+                    <option value="">Negro</option>
+                    <option value="">Azul</option>
+                </select>
+            </div>
+            <div class="grupoFiltroBoton">
+                <div class="contenedorBoton">
+                    <form class="d-flex" role="search" >
+                        <!-- SE AGREGA NG MODEL Y EL EVENTO QUE SE EMITE  -->
+                        <input class="form-control me-2" name="busqueda" type="text" placeholder="Ingresa tu busqueda" aria-label="Search" [(ngModel)]="valorIngresado" (ngModelChange)="search.emit(valorIngresado)">
+                    </form>
+                </div>
 
-
-        <div class="grupoFiltro">
-            <label for="RangoInicial">Rango Inicial</label>
-            <input type="number" name="RangoInicial" id="">
-        </div>
-        <div class="grupoFiltro">
-            <label for="RangoFinal">Rango Final</label>
-            <input type="number" name="RangoFinal" id="">
-        </div>
-
-        <div class="contenedorEnviar">
-            <button type="submit">Buscar</button>
+            </div>
         </div>
     </form>
 </div>
-

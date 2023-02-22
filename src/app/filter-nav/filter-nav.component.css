@@ -1,55 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-.contenedorFiltro{
-    margin-top: 20px;
+.contenedorFormulario{
     text-align: center;
+}
+.contenedorTitulo{
+    background-color: var(--fucsia);
+    color: var(--blanco);
+    padding: 5px;
+    font-size: 30px;
+    margin: 10px 10px 0px 10px;
+}
+.contenedorPrincipal{
+    margin: 2px 10px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--gris);
+}
+.contenedorPrincipal .grupoFiltro{
+    width: 250px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    background-color: gray;
-    width: 20%;
+    font-size: 20px;
+    color: var(--fucsia);
     font-weight: bold;
 }
-.tituloFiltro{
-    text-align: center;
-    line-height: 10px;
-    background-color: #8A084B;
-    color: aliceblue;
-}
-.tituloFiltro p{
-    padding: 30px;
-}
-.tituloRango p{
-    color: #8A084B;
-}
-.grupoFiltro{
-    padding: 10px;
-    margin-bottom: 30px;
-}
 .grupoFiltro label{
-    text-align: justify;
-    width: 150px;
+    margin-right: 15px;
 }
 
-.grupoFiltro select{
-    width: 50px;
-    text-align: center;
+.grupoFiltroBoton{
+    width: 250px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
 }
-.grupoFiltro input{
+.grupoFiltroBoton .contenedorBoton button{
+    border-style: none;
+    width: 100%;
+    background-color: var(--fucsia);
+    padding: 15px;
+    color: var(--blanco);
+    border: 3px inset var(--fucsia);
     border-radius: 5px;
-}
-.contenedorEnviar{
-    padding-bottom: 20px;
-
-}
-.contenedorEnviar button{
-    border-radius: 10px;
-    padding: 10px;
-    width: 50%;
-    text-decoration: none;
-    border-color: #8A084B;
+    font-weight: bold;
     transition: 2s;
 }
-.contenedorEnviar button:hover{
-    transition: 2s;
-    background-color: #8A084B;
-    color: aliceblue;
+.d-flex{
+    font-size: 20px;
+}
+.d-flex .me-2{
+    height: 50px;
+    font-size: 20px;
+    color: var(--fucsia);
 }

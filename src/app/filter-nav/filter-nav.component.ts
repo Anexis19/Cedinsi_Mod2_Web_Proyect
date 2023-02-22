@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter-nav',
@@ -6,10 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./filter-nav.component.css']
 })
 export class FilterNavComponent {
-  rangevalue = 0;
+   // Creacion de variable que almacena el valor ingresado
+   valorIngresado:string='';
 
-  valueChanged(event:any) {
-    this.rangevalue = event.target.value;
-  }
+   constructor(){
+
+   }
+   // Creacion de evento de busqueda
+   @Output() search : EventEmitter<string> = new  EventEmitter<string>();
 
 }
