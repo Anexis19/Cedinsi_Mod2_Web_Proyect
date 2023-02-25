@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { BuscarPipe } from './pipes/buscar.pipe';
 import { SliderComponent } from './slider/slider.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SliderComponent } from './slider/slider.component';
     ContactComponent,
     LoginComponent,
     BuscarPipe,
-    SliderComponent
+    SliderComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

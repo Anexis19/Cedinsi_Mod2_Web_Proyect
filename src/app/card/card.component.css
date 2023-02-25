@@ -13,8 +13,11 @@
     margin-bottom: 50px;
     border-radius: 20px;
     border: 4px inset var(--fucsia);
-
-
+    transition: 2s;
+}
+.contenedorCard:hover{
+    scale: 1.1;
+    transition: 2s;
 }
 .contenedorVehiculo{
     padding: 5px;

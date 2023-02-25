@@ -1,0 +1,30 @@
+.contenedorPrincipal{
+    width: 60%;
+    margin: auto;
+}
+.contenedorTitulo{
+    box-sizing: border-box;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background: url(../../assets/bg.jpg);
+    font-size: 25px;
+    padding: 20px;
+    color: var(--blanco);
+    border: 5px outset #1C1E1D;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+.contenedorPrincipal .carousel{
+    margin-bottom: 20px;
+}
+.carousel-indicators button{
+    background-color: var(--fucsia);
+}
+
+.carousel-control-prev span, .carousel-control-next span {
+    background-color: var(--fucsia);
+}

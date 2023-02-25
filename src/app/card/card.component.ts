@@ -28,10 +28,7 @@ export class CardComponent {
     this.datoBuscar = val
   }
   // PRUEBA DE ENVIO
-  pruebaEnvio(titulo:string){
-    // console.log(titulo);
-    // ESTA FUNCION ACCEDE AL EVENTO DISPARADORTITULO EL CUAL ESTA EN EL
-    // SLIDER INFORMATION Y UTILIZA LA PROPIEDAD DE EMITIR, EN DONDE ENVIA EL TITULO
-    this.sliderInformation.disparadorTitulo.emit(titulo)
+  publishData(titulo:string){
+    this.sliderInformation.putDataToStream(titulo);
   }
 }

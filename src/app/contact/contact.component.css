@@ -2,11 +2,9 @@
     text-align: center;
     margin-bottom: 5em;
     transition: 2s;
-}
-.contenedorTitulo:hover{
     color: var(--fucsia);
-    transition: 2s;
 }
+
 .contenedorContacto{
     display: flex;
     justify-content: space-around;
@@ -17,7 +15,13 @@
     padding: 2em;
     border-radius: 10px;
     border: 3px inset var(--fucsia);
+    transition: 2s;
 }
+.contenedorHorario:hover, .contenedorTelefono:hover{
+    scale: 1.2;
+    transition: 2s;
+}
+
 .contenedorHorario p span, .contenedorTelefono p span{
     font-size: 20px;
     font-weight: bold;
@@ -33,6 +37,7 @@
     border: 2px outset var(--fucsia);
     border-radius: 10px;
     margin-bottom: 3em;
+    font-size: 18px;
 }
 
 .contenedorFormulario .contenedorDescripcion{
@@ -45,9 +50,10 @@
 .contenedorFormulario .contenedorGrupo label{
     width: 150px;
     text-align: justify;
+    margin-right: 30px;
 }
 .contenedorGrupo {
-    margin: 1.5em;
+    margin: 1em;
     box-sizing: border-box;
     text-align: center;
 }
@@ -58,6 +64,8 @@
     text-decoration: none;
     border-color: var(--fucsia);
     transition: 2s;
+    font-weight: bold;
+    color: var(--fucsia);
 
 }
 .contenedorGrupo button:hover{

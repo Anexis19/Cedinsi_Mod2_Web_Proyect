@@ -11,16 +11,16 @@ const routes: Routes = [
   {
     // En este caso, el path hace referencia a un objeto declarado como 'inicio'
     // y seguidamente, se hace mencion del componente
-    path:'inicio',
+    path:'home',
     component: HomeComponent
   },{
-    path:'ayuda',
+    path:'contact',
     component: ContactComponent
   },{
     path:'login',
     component:LoginComponent
   },{
-    path: 'galeria',
+    path: 'sliders',
     component:SliderComponent
   },
   {
