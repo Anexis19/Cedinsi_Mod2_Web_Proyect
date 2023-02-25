@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { SliderComponent } from './slider/slider.component';
 
 const routes: Routes = [
@@ -22,6 +23,9 @@ const routes: Routes = [
   },{
     path: 'sliders',
     component:SliderComponent
+  },{
+    path:'register',
+    component: RegisterComponent
   },
   {
     // Se define una ruta por defecto con su componente por defecto
